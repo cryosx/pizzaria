@@ -1,4 +1,60 @@
 
+a {
+	text-decoration: none;
+}
+
+a:link {
+    color: salmon;
+}
+
+a:visited {
+    color: salmon;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+a:active {
+    color: blue;
+}
+
+#intro .content * {
+	display: inline;
+}
+
+#name {
+	font-size: 3rem;
+}
+
+header {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+
+#intro .content nav {
+	float: right;
+	/*display: inline-flex;*/
+	/*text-align: right;*/
+	/*position: absolute;*/
+	/*right: 0;*/
+}
+
+#intro .content img {
+	width: 30px;
+}
+
+#today {
+	margin-top:100px;
+}
+
+
+
 .content {
 /*	margin: auto;
     width: 99%;
@@ -8,8 +64,8 @@
 
 }
 .pizza {
-	background-image: url("/assets/ObjectofMyDesire.jpg");
-	background-position: center;
+	/*background-image: url("/assets/ObjectofMyDesire.jpg");*/
+
 	vertical-align: bottom;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -18,20 +74,71 @@
     display: inline-block;
     padding: 2px 16px;
     margin: 5px 5px;
+    position: relative;
 
+}
+
+#menu .content div:nth-of-type(1) {
+	background-image: url("/assets/ObjectofMyDesire.jpg");
+	background-size: cover;
+	background-position: center;
+}
+#menu .content div:nth-of-type(2) {
+	background-image: url("/assets/FourLoop.jpg");
+	background-size: cover;
+	background-position: center;
+}#menu .content div:nth-of-type(3) {
+	background-image: url("/assets/ConditionalLove.jpg");
+	background-size: cover;
+	background-position: center;
+}#menu .content div:nth-of-type(4) {
+	background-image: url("/assets/TheDOM.jpg");
+	background-size: cover;
+	background-position: center;
+}#menu .content div:nth-of-type(5) {
+	background-image: url("/assets/ConjuctionFunction.jpg");
+	background-size: cover;
+	background-position: center;
 }
 
 .pizza:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.pizzaImage {
-	height: 100%;
-	width: 100%;
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /*width: 50%;*/
+.pizzaName {
+	/*color:white;*/
+	position: absolute;
+	top:0px;
+	left:0px;
+	/*right:0px;*/
+	margin-top:0px;
+	padding: .25rem;
+	background-color: white;
+
+}
+
+.description {
+	position: absolute;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	margin:0px;
+	padding:1rem;
+	background-color: white;
+}
+
+.price {
+	position: absolute;
+	/*left: 0px;*/
+	top: 0px;
+	right:0px;
+	/*bottom: 0px;*/
+	margin-top: 0px;
+	margin-right: 0px;
+	padding: .25rem;
+	/*margin-left: 0px;*/
+	/*margin-bottom: 0px;*/
+	background-color: white;
 }
 
 body {
