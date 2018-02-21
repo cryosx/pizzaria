@@ -19,6 +19,12 @@ a:active {
     color: blue;
 }
 
+.guide {
+	padding: 20px;
+	font-size: 1.1rem;
+    font-weight: bolder;
+}
+
 #intro .content * {
 	display: inline;
 }
@@ -38,11 +44,16 @@ header {
 }
 
 #intro .content nav {
-	float: right;
-	/*display: inline-flex;*/
-	/*text-align: right;*/
-	/*position: absolute;*/
-	/*right: 0;*/
+	/*float:right;*/
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    margin-right:16px;
 }
 
 #intro .content img {
@@ -50,7 +61,20 @@ header {
 }
 
 #today {
-	margin-top:100px;
+	margin-top:50px;
+}
+
+#special {
+	    color: white;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px #000;
+    background-image: url(/assets/ConditionalLove.jpg);
+    background-size: auto;
+    background-position: center;
+    height: 300px;
+    border-radius: 10px;
 }
 
 
@@ -114,6 +138,9 @@ header {
 	margin-top:0px;
 	padding: .25rem;
 	background-color: white;
+	font-weight: bolder;
+    font-size: 20px;
+    border-bottom-right-radius: 10px;
 
 }
 
@@ -139,6 +166,11 @@ header {
 	/*margin-left: 0px;*/
 	/*margin-bottom: 0px;*/
 	background-color: white;
+}
+
+.sectionTitle {
+	    text-align: center;
+    font-size: 3rem;
 }
 
 body {
