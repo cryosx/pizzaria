@@ -13,6 +13,7 @@ a:visited {
 
 a:hover {
     color: hotpink;
+
 }
 
 a:active {
@@ -23,6 +24,13 @@ a:active {
 	padding: 20px;
 	font-size: 1.1rem;
     font-weight: bolder;
+    transition: background-color 1s;
+
+}
+
+.guide:hover {
+    background-color: #F0F0F0;
+
 }
 
 #intro .content * {
@@ -34,6 +42,7 @@ a:active {
 }
 
 header {
+	text-align:left;
 	position:absolute;
 	top:0;
 	left:0;
@@ -62,6 +71,7 @@ header {
 
 #today {
 	margin-top:50px;
+	text-align: left;
 }
 
 #special {
@@ -87,6 +97,11 @@ header {
     padding: 2px 16px;
 
 }
+
+#menu {
+	text-align: left;
+}
+
 .pizza {
 	/*background-image: url("/assets/ObjectofMyDesire.jpg");*/
 
@@ -173,6 +188,36 @@ header {
     font-size: 3rem;
 }
 
+#subscribe {
+
+/*	display: flex; 
+   	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+    flex-wrap: wrap;*/
+    display: inline-block;    
+    vertical-align: top;
+
+}
+
+#visit {
+
+/*   	display: flex; 
+   	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+    flex-wrap: wrap;*/
+    display: inline-block;
+
+    vertical-align: top;
+
+}
+
+#addy {
+	text-align:left;
+}
+
 body {
 	font-family: 'Bellefair', serif;
+	text-align:center;
 }
